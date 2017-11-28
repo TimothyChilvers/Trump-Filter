@@ -5,7 +5,7 @@
  */
 
 // Variables
-var regex = /Trump/i;
+var regex = /wedding/i;
 var search = regex.exec(document.body.innerText);
 
 var selector = ":contains('royal wedding'), :contains('Royal wedding'), :contains('Prince Harry')";
