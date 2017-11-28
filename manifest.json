@@ -1,25 +1,25 @@
 {
   "manifest_version": 2,
-  "name": "Trump Filter",
+  "name": "Royal Wedding Filter",
   "version": "1.1.1",
-  "description": "Remove Donald Trump from the Internet.",
+  "description": "Remove Royal Wedding from the Internet.",
   "page_action" :
   {
     "default_icon" : "images/icon-19x19.png",
-    "default_title" : "Warning: Trump is on this page!"
+    "default_title" : "Warning: Royal Wedding is on this page!"
   },
   "permissions": [
     "tabs",
     "storage"
 	],
   "content_scripts": [
-    { 
+    {
       "matches": [
         "http://*/*",
         "https://*/*"
       ],
       "exclude_globs": [
-        "*://*trumpfilter.com*", 
+        "*://*trumpfilter.com*",
         "*://*github.com*"
       ],
       "js": ["js/jquery-3.1.1.min.js", "js/filter.js"],

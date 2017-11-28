@@ -1,14 +1,14 @@
 /*
  * Trump Filter - Content Script
  *
- * This is the primary JS file that manages the detection and filtration of Donald Trump from the web page.
+ * This is the primary JS file that manages the detection and filtration of Royal Wedding from the web page.
  */
 
 // Variables
 var regex = /Trump/i;
 var search = regex.exec(document.body.innerText);
 
-var selector = ":contains('Trump'), :contains('TRUMP'), :contains('trump')";
+var selector = ":contains('royal wedding'), :contains('Royal wedding'), :contains('Prince Harry')";
 
 
 // Functions
